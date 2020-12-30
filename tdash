@@ -1,3 +1,3 @@
 #!/bin/bash
 
-tmux new -A -s dashboard s-tui \; if-shell -b '[ "$(tmux display-message -p '#{window_panes}')" = 1 ]' "split-window -t dashboard -h bashtop"
+tmux new -A -s tdash s-tui \; if-shell -b '[ "$(tmux display-message -p '#{window_panes}')" = 1 ]' "split-window -t tdash -h bashtop"
